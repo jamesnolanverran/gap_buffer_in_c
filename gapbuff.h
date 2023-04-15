@@ -41,7 +41,7 @@ char* gb_get_text(GapBuffer* gb);
 
 unsigned int gb_get_line_length(GapBuffer* gb, unsigned int line_number);
 unsigned int gb_get_line_count(GapBuffer* gb);
-unsigned int gb_get_line_start_pos(GapBuffer* gb, unsigned int line_number) {
+unsigned int gb_get_line_start_pos(GapBuffer* gb, unsigned int line_number);
 
 void gb_free(GapBuffer* gb);
 
