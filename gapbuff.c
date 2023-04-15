@@ -319,7 +319,7 @@ u32 gb_get_line_length(GapBuffer* gb, u32 line_number) {
 u32 gb_get_line_start_pos(GapBuffer* gb, u32 line_number) {
     if (line_number == 0) {
         return gb_get_text_start(gb);
-    } else if (line_number <= darr_len(gb->linebreaks)) {
+    } else if (line_number <= (u32)darr_len(gb->linebreaks)) {
         return gb_virtual_pos_to_pos(gb, gb->linebreaks[line_number - 1] + 1);
     } else {
         return (u32)-1;
